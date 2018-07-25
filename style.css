@@ -1,0 +1,306 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 65px;
+  background-color: #2F2235;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.title, 
+.student-name {
+  margin: 0 65px;
+  color: #f2f2f2;
+}
+
+.student-name {
+  font-weight: 600;
+}
+
+.title-party {
+  color: #34D1D1;
+}
+
+.section-title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 93%;
+  margin: 0 auto;
+}
+
+.section-title {
+  flex-grow: 0;
+  margin: 40px 26px 40px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.divider {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #D1D2D3;
+}
+
+.accordian-container {
+  height: 400px;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid rgb(138, 131, 131);
+}
+
+.accordion {
+  background-color: #f2f2f2;
+  color: #444;
+  cursor: pointer;
+  width: 24.6%;
+  padding: 0;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  height: 40px;
+  font-size: 18px;
+  border: 1px solid rgb(138, 131, 131);
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 360px;
+}
+
+.panel-image {
+  min-width: 400px;
+  min-height: 260px;
+  background-color: #d1d2d3;
+}
+
+.text-container {
+  width: 500px;
+}
+
+.panel-title {
+  border-bottom: 1px solid #d1d2d3;
+  padding-bottom: 15px;
+}
+
+.panel-selected {
+  display: inherit;
+}
+
+.view-code {
+  height: 60px;
+  width: 100%;
+  color: #f2f2f2;
+  background-color: #3F3244;
+  border: none;
+  margin: 70px auto;
+  border-bottom: 4px solid #19121d;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 3px 3px grey;
+  border-radius: 3px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.link {
+  width: 33%;
+}
+
+.view-code:hover {
+  border-bottom: 4px solid #0000ff00;
+  box-shadow: 0px 2px 2px grey;
+  background-color: #2b1f31;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 400px);
+  grid-gap: 10px;
+  margin: 10px auto;
+}
+
+.card, .card1, .card7, .card4 {
+  border: 1px solid #d1d2d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card1 {
+ grid-column: 1 / span 2;
+}
+
+.card7 {
+  grid-column: 2 / span 2;
+}
+
+.card-image {
+  height: 100%;
+  width: 100%;
+  background-color: #D1D2D3
+}
+
+.header-bar {
+  width: 80%;
+  height: 150px;
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d1d2d3;
+  color: #666666;
+}
+
+.circle-image {
+  min-height: 70px;
+  min-width: 70px;
+  background-color: white;
+  border-radius: 50px;  
+}
+
+.search-bar {
+  height: 45px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.search-logo {
+  height: 36px;
+  margin: 0 14px;
+}
+
+.nav {
+  font-size: 18px;
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .panel { 
+    flex-direction: column;
+    height: 600px;
+    justify-content: flex-start;
+  }
+
+  .panel-image {
+    display: none;
+  }
+
+  .accordian-container {
+    width: 100%;
+    height: 600px;
+  }
+
+  .accordion {
+    overflow: scorll;
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    position: relative;
+  }
+
+  .text-container {
+    width: 90%
+  }
+
+  .section-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 93%;
+  }
+
+  .section-title {
+    margin: 20px 0 8px 0;
+  }
+
+  .divider {
+    width: 40px;
+    margin-bottom: 15px;
+  }
+
+  .view-code {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .button-container1 {
+    margin-top: 250px;
+    height: 200px;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 250px);
+  }
+
+  .nav, 
+  .search-bar {
+    display: none;
+  }
+
+  .menu {
+    display: inherit; 
+    cursor: pointer;
+  }
+
+  .card {
+    display: none;
+  }
+
+  .card4 {
+    display: inherit;
+  }
+
+  .card1 {
+    grid-column: 1 / span 1;
+   }
+   
+   .card7 {
+     grid-column: 1 / span 1;
+   }
+}
+
